@@ -4,7 +4,7 @@ FROM centos:7
 RUN yum install -y java-1.8.0-openjdk.x86_64
 
 # install kafka
-RUN curl https://mirror-hk.koddos.net/apache/kafka/2.7.0/kafka_2.13-2.7.0.tgz -o kafka_2.13-2.7.0.tgz \
+RUN curl https://apache.website-solution.net/kafka/2.7.0/kafka_2.13-2.7.0.tgz -o kafka_2.13-2.7.0.tgz \
     && tar -xzf kafka_2.13-2.7.0.tgz \
     && rm -f kafka_2.13-2.7.0.tgz \
     && mv kafka_2.13-2.7.0 /kafka
